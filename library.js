@@ -21,14 +21,14 @@ const libraryAtYourDisposal = () => {
       const fillTheLibrary = () => {
         books.forEach((book) => {
           const newCol = document.createElement("div");
-          newCol.classList.add("col");
+          newCol.classList.add("col-4");
           newCol.innerHTML = `
-              <div class="card">
-                  <img src="${book.img}" class="card-img-top" alt="book-cover" />
+              <div class="card h-100">
+                  <img src="${book.img}" class="card-img-top" style="height:320px" alt="book-cover" />
                       <div class="card-body">
-                           <h5 class="card-title fs-5">${book.title}</h5>
+                           <h5 class="card-title fs-5" style="height:135px">${book.title}</h5>
                               <p class="card-text">💲: ${book.price}</p>
-                                  <button class="btn btn-outline-danger">Gives me the ick!</button>
+                                  <button class="btn btn-outline-danger mt-2">Gives me the ick!</button>
                       </div>
               </div>
                     `;
