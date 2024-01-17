@@ -42,7 +42,7 @@ const libraryAtYourDisposal = () => {
         const ickBtns = document.querySelectorAll(".btn-outline-danger");
         ickBtns.forEach((button) => {
           button.addEventListener("click", (e) => {
-            const card = e.target.closest(".col-12");
+            const card = e.target.closest(".col-10");
             if (card) {
               row.removeChild(card);
             }
